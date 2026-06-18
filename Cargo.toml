@@ -7,3 +7,4 @@ license = "AGPL-3.0-or-later"
 [dependencies]
 clearscreen = "4.0"
 dialoguer = "0.12.0"
+sysinfo = "0.38.4"
