@@ -13,4 +13,6 @@ fn main() {
     let selected_layout = cli::keyboard_layout::prompt();
 
     println!("\nResult saved in memory: {}", selected_layout);
+
+    std::process::exit(0);
 }
