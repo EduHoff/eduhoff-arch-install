@@ -8,6 +8,12 @@ fn main() {
     println!("MiB {}", total_ram);
     println!("Swap size: {}", swap_size);
 
+    if total_ram < 2048{
+        eprintln!("Error: System does not have enough RAM for installation!");
+        eprintln!("Minimum requirement is 2 GiB, but at least 4 GiB is highly recommended.");
+        std::process::exit(1);
+    }
+
     println!("=== Testing eduhoff-arch-install UI ===");
 
     let selected_layout = cli::keyboard_layout::prompt();
